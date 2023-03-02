@@ -1,0 +1,30 @@
+@import "./utils/variables";
+// @import "./utils/functions";
+// @import "./utils/mixins";
+// @import "./utils/extensions";
+// @import "./base/base";
+@import "./base/config";
+// @import "./base/typography";
+// @import "./components/buttons";
+// @import "./layouts/header";
+// @import "./layouts/nav";
+// @import "./layouts/container";
+// @import "./layouts/form";
+// @import "./pages/work";
+// @import "./pages/about";
+// @import "./pages/project";
+
+h1 {
+  color: $prim_color;
+}
+
+img {
+  width: 90vw;
+  max-height: 67vw;
+  object-fit: cover;
+  margin: 0 auto 0 auto;
+}
+
+p {
+  color: $sec_color;
+}

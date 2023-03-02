@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 40px 0 40px;
+}
+
+h1 {
+  color: #9356dc;
+}
+
+img {
+  width: 90vw;
+  max-height: 67vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto 0 auto;
+}
+
+p {
+  color: #ff79da;
+}/*# sourceMappingURL=main.css.map */
