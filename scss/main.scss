@@ -14,17 +14,244 @@
 // @import "./pages/about";
 // @import "./pages/project";
 
-h1 {
-  color: $prim_color;
+@mixin shadow {
+  box-shadow: 0px 10px 13px -7px #0000004b,
+    0px 2px 6px 2px rgba(106, 106, 106, 0);
 }
 
-img {
-  width: 90vw;
-  max-height: 67vw;
-  object-fit: cover;
+:root {
+  background-color: grey;
+}
+
+body {
+  width: $iphone14_vw;
+  border: 1px solid black;
+  background-color: white;
   margin: 0 auto 0 auto;
 }
 
-p {
-  color: $sec_color;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  .header__logo {
+    width: 45%;
+  }
+}
+
+.location {
+  box-shadow: inset 0px 2px 6px -2px rgba(106, 106, 106, 0.9);
+  background-color: #eaeaea;
+  color: $grey_font_color;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    padding: 0 12px 0;
+  }
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.eli5 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background-color: $grey_background;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-search {
+  height: 40px;
+  border-radius: 50px;
+  background: linear-gradient(144deg, $sec_color 0%, $prim_color 89%);
+  color: rgb(227, 227, 227);
+  font-weight: 700;
+  box-shadow: 0px 10px 13px -7px #00000084,
+    0px 2px 6px 2px rgba(106, 106, 106, 0);
+  width: fit-content;
+  padding: 0 1rem;
+}
+
+section {
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 1rem;
+}
+
+.howto__container {
+  padding-left: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.howto__card {
+  @include shadow;
+  display: flex;
+  flex-direction: row;
+  padding: 0.65rem;
+  align-items: center;
+  height: 60px;
+  background-color: $grey_background;
+  color: $grey_font_color;
+  position: relative;
+  i {
+    width: 3.5rem;
+    text-align: center;
+  }
+  border-radius: 18px;
+  &:hover {
+    background-color: $faux_prim_color;
+    i {
+      color: $prim_color;
+    }
+  }
+}
+
+.howto__step {
+  background-color: $prim_color;
+  color: $faux_white_color;
+  position: absolute;
+  left: -0.65rem;
+  border-radius: 100%;
+  height: 1.3rem;
+  width: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.restaurants {
+  background-color: $grey_background;
+}
+
+.restaurants__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.restaurants__card {
+  @include shadow;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+}
+
+.restaurants__figure {
+  img {
+    border-radius: 13px 13px 0 0;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.restaurant__infos {
+  padding: 0.4rem 0.8rem 0.8rem;
+  position: relative;
+  p {
+    color: $grey_font_color;
+    margin-top: 0.15rem;
+  }
+  i {
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+    font-size: 1.4rem;
+    color: $grey_font_color;
+  }
+  i:nth-child(3) {
+    opacity: 0;
+    background: linear-gradient(144deg, $sec_color 0%, $prim_color 89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    .fa {
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 100%;
+    }
+  }
+}
+
+h4 {
+  font-size: 1.05rem;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant__new {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 1rem;
+  right: 1rem;
+  background-color: $new_background;
+  color: $new_color;
+  padding: 0.2rem 0.3rem;
+  user-select: none;
+}
+
+.test {
+  height: 300px;
+  .fa {
+    font-size: 150px;
+    background: linear-gradient(144deg, $sec_color 0%, $prim_color 89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+footer {
+  color: $faux_white_color;
+  background-color: $footer_color;
+  font-size: 0.85rem;
+  img {
+    filter: brightness(0) invert(1);
+    width: 100px;
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    margin: 0.5rem 0;
+  }
+
+  i {
+    font-size: 0.8rem;
+    width: 1.5rem;
+  }
 }
