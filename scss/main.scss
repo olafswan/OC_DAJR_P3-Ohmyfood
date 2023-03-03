@@ -19,6 +19,27 @@
     0px 2px 6px 2px rgba(106, 106, 106, 0);
 }
 
+@mixin shadow-hover {
+  box-shadow: 0px 10px 13px -7px #000000ab,
+    0px 2px 6px 2px rgba(106, 106, 106, 0);
+}
+
+@mixin gradient-hover {
+  background: linear-gradient(
+    144deg,
+    $sec_color_light 0%,
+    $prim_color_light 89%
+  );
+}
+
+@mixin gradient {
+  background: linear-gradient(144deg, $sec_color 0%, $prim_color 89%);
+}
+
+@mixin location-shadow {
+  box-shadow: inset 0px 2px 6px -2px rgba(106, 106, 106, 0.9);
+}
+
 :root {
   background-color: grey;
 }
@@ -41,7 +62,7 @@ header {
 }
 
 .location {
-  box-shadow: inset 0px 2px 6px -2px rgba(106, 106, 106, 0.9);
+  @include location-shadow;
   background-color: #eaeaea;
   color: $grey_font_color;
   height: 50px;
@@ -80,15 +101,22 @@ h2 {
 }
 
 .btn-search {
+  @include gradient;
+  @include shadow;
+  // TODO fix the previous include not working
   height: 40px;
   border-radius: 50px;
-  background: linear-gradient(144deg, $sec_color 0%, $prim_color 89%);
   color: rgb(227, 227, 227);
   font-weight: 700;
   box-shadow: 0px 10px 13px -7px #00000084,
     0px 2px 6px 2px rgba(106, 106, 106, 0);
   width: fit-content;
   padding: 0 1rem;
+  &:hover {
+    @include shadow-hover;
+    @include gradient-hover;
+    cursor: pointer;
+  }
 }
 
 section {
@@ -126,7 +154,10 @@ h3 {
   }
   border-radius: 18px;
   &:hover {
+    @include shadow-hover;
     background-color: $faux_prim_color;
+    cursor: pointer;
+
     i {
       color: $prim_color;
     }
@@ -166,6 +197,10 @@ h5 {
   border-radius: 15px;
   background-color: white;
   position: relative;
+  &:hover {
+    @include shadow-hover;
+    cursor: pointer;
+  }
 }
 
 .restaurants__figure {
