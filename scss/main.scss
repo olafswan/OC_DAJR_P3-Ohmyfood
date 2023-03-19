@@ -26,14 +26,14 @@
 
 @mixin gradient-hover {
   background: linear-gradient(
-    144deg,
+    180deg,
     $sec_color_light 0%,
-    $prim_color_light 89%
+    $prim_color_light 100%
   );
 }
 
 @mixin gradient {
-  background: linear-gradient(144deg, $sec_color 0%, $prim_color 89%);
+  background: linear-gradient(180deg, $sec_color 0%, $prim_color 100%);
 }
 
 @mixin location-shadow {
@@ -45,8 +45,8 @@
 }
 
 body {
-  width: $iphone14_vw;
-  border: 1px solid black;
+  // width: $iphone14_vw;
+  // border: 1px solid black;
   background-color: white;
   margin: 0 auto 0 auto;
 }
@@ -57,7 +57,7 @@ header {
   align-items: center;
   height: 60px;
   .header__logo {
-    width: 45%;
+    width: 175px;
   }
 }
 
@@ -240,7 +240,7 @@ h5 {
   }
   i:nth-child(3) {
     opacity: 0;
-    background: linear-gradient(144deg, $sec_color 0%, $prim_color 89%);
+    background: linear-gradient(180deg, $sec_color 0%, $prim_color 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -272,6 +272,7 @@ figcaption {
   color: $new_color;
   padding: 0.2rem 0.3rem;
   user-select: none;
+  border-radius: 2px;
 }
 
 // .test {
@@ -299,13 +300,14 @@ footer {
 
   i {
     font-size: 0.8rem;
-    width: 1.5rem;
+    width: 1.25rem;
   }
 }
 
 // -------------------------------
 // -------------------------------
 // -------------------------------
+// MOBILE
 // RESTAURANTS MENUS PAGES
 // -------------------------------
 // -------------------------------
@@ -313,6 +315,8 @@ footer {
 
 .menu__cover {
   width: 100%;
+  height: 259px;
+  object-fit: cover;
 }
 
 .cover__container {
@@ -320,7 +324,7 @@ footer {
 }
 
 .restaurant-name {
-  border: 1px solid red;
+  // border: 1px solid red;
   position: relative;
   bottom: 50px;
   width: 100%;
@@ -358,21 +362,33 @@ footer {
   }
   h2 {
     text-transform: uppercase;
-    margin-bottom: 0.2rem;
+    // margin-bottom: 0.2rem;
+    margin-bottom: 0.8rem;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        
+
+        // bottom: 10px;
+        width: 45px;
+        border-top: 3px solid $mint_color;
+        // margin-bottom: 0.8rem;
+        // TODO increase space between H2 and green line 
+      }
   }
   display: flex;
   flex-direction: column;
-
+  .card {
+    color: black;
+  }
 }
 
-.greenline {
-  width: 45px;
-  border-top: 3px solid $mint_color;
-  margin-bottom: 0.8rem;
-
-  
-
-}
+// .greenline {
+//   width: 45px;
+//   border-top: 3px solid $mint_color;
+//   margin-bottom: 0.8rem;
+// }
 
 .starter {
   margin-top: -50px;
@@ -384,8 +400,11 @@ footer {
   gap: 1rem;
 }
 
+
+
+
 .dishes__card {
-  background-color: $white_background;
+  background-color: white;
 
   display: flex;
   flex-direction: column;
@@ -393,25 +412,183 @@ footer {
     h3 {
       font-size: 1.15rem;
       margin-bottom: .5rem;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .card__price {
       font-weight: bold;
     }
+    
 }
 
 .card__bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: .95rem;
+}
+
+.card__detail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn-order {
   align-self: center;
-  width: 250px;
+  width: 200px;
   height: 50px;
   // padding: 1.5rem 3rem 1.5rem 3rem;
-  margin: 1rem auto 2rem auto;
+  margin: 1rem auto 3rem auto;
   line-height: 100%;
   font-size: 1.05rem;
   font-weight: normal;
+}
+
+// -------------------------------
+// -------------------------------
+// -------------------------------
+// TABLETS 
+// HOME PAGE
+// -------------------------------
+// -------------------------------
+// -------------------------------
+
+
+@media (min-width: 700px) {
+
+  section,
+  footer {
+  padding: 2.5rem;
+  }
+
+  .howto__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    justify-content: space-evenly;
+
+  }
+
+  .howto__card {
+    width: fit-content;
+    padding-right: 2.5rem;
+    // margin-right: 2rem;
+    // &:nth-child(2) {
+    //   // align-self: center;
+    //   margin-left: 3rem;
+    // }
+    // &:last-child {
+    //   // align-self: end;
+    //   margin-left: 6rem;
+    // }
+  }
+
+
+  .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .restaurants__card {
+   width: 47.42%;
+  }
+
+  .restaurants__figure {
+    img {
+      height: 280px;
+    }
+  }
+
+// -------------------------------
+// -------------------------------
+// -------------------------------
+// TAbLETS
+// RESTAURANTS MENUS PAGES
+// -------------------------------
+// -------------------------------
+// -------------------------------
+
+  .menu {
+  h1 {
+    padding-left: 2rem;
+  }
+  i {
+    padding-right: 2rem;
+  }
+
+  }
+
+  .menu__cover {
+    height: 359px;
+  }
+
+}
+
+// -------------------------------
+// -------------------------------
+// -------------------------------
+// DESKTOP 
+// HOME PAGE
+// -------------------------------
+// -------------------------------
+// -------------------------------
+
+
+@media (min-width: 1000px) {
+
+.howto__container {
+  // flex-direction: row;
+  // justify-content: space-evenly;
+  // gap: 1rem;
+}
+
+// .howto__card {
+//   // width: fit-content;
+//   padding-right: 1rem;
+//   &:nth-child(2) {
+//     // align-self: center;
+//     margin-left: 0rem;
+//   }
+//   &:last-child {
+//     // align-self: end;
+//     margin-left: 0rem;
+//   }
+// }
+
+// -------------------------------
+// -------------------------------
+// -------------------------------
+// DESKTOP 
+// RESTAURANTS MENUS PAGES
+// -------------------------------
+// -------------------------------
+// -------------------------------
+
+.dishes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  section {
+    width: 50%;
+  }
+}
+
+.main-course {
+  margin-top: -50px;
+}
+
+.dessert {
+  margin-top: 2rem;
+}
+
+.btn-order {
+  margin-top: 3rem;
+}
+
 }
