@@ -341,11 +341,54 @@ footer i {
   gap: 1rem;
 }
 
+.adder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 70px;
+  background-color: #99e2d0;
+  margin: -0.65rem -0.65rem -0.65rem 0;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  border-radius: 0 18px 18px 0;
+  cursor: pointer;
+}
+
+.dishe-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  transition-property: display;
+  transition-duration: 4s;
+}
+.dishe-container .adder {
+  transition: all 3s;
+  display: none;
+}
+.dishe-container:hover .adder {
+  display: flex;
+}
+
+.rounded-quote {
+  height: 1.35rem;
+  width: 1.35rem;
+  line-height: 1.35rem;
+  text-align: center;
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
 .dishes__card {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 70px;
+  width: 100%;
 }
 .dishes__card h3 {
   font-size: 1.15rem;
@@ -356,6 +399,7 @@ footer i {
 }
 .dishes__card .card__price {
   font-weight: bold;
+  margin-right: 0.5rem;
 }
 
 .card__bottom {
@@ -410,10 +454,10 @@ footer i {
   .restaurants__figure img {
     height: 280px;
   }
-  .menu h1 {
+  .restaurant-name h1 {
     padding-left: 2rem;
   }
-  .menu i {
+  .restaurant-name i {
     padding-right: 2rem;
   }
   .menu__cover {

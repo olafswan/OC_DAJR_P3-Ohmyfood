@@ -401,6 +401,75 @@ footer {
 }
 
 
+.adder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 70px;
+  background-color: $mint_color;
+  margin: -0.65rem -0.65rem -0.65rem 0;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  border-radius: 0 18px 18px 0;
+  cursor: pointer;
+  // position: absolute;
+  // top: 10px;
+  // right: -60px;
+  // z-index: -1;
+}
+
+
+
+.dishe-container {
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+
+  // transition: all 3000ms;
+
+  transition-property: display;
+  transition-duration: 4s;
+  
+  .adder {
+    transition: all 3s;
+    display: none;
+    
+  }
+  
+  &:hover {
+  .adder {
+    display: flex;
+
+
+    // transform: translate(-100%,0);
+
+
+
+  }
+  }
+
+}
+
+
+
+
+
+
+.rounded-quote {
+  height: 1.35rem;
+  width: 1.35rem;
+  line-height: 1.35rem;
+  text-align: center;
+  color: $mint_color;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+}
 
 
 .dishes__card {
@@ -408,7 +477,8 @@ footer {
 
   display: flex;
   flex-direction: column;
-  height: 70px;
+  width: 100%;
+  // height: 70px;
     h3 {
       font-size: 1.15rem;
       margin-bottom: .5rem;
@@ -419,9 +489,12 @@ footer {
     }
     .card__price {
       font-weight: bold;
+      margin-right: 0.5rem;
     }
     
+    
 }
+
 
 .card__bottom {
   display: flex;
@@ -514,7 +587,7 @@ footer {
 // -------------------------------
 // -------------------------------
 
-  .menu {
+  .restaurant-name {
   h1 {
     padding-left: 2rem;
   }
