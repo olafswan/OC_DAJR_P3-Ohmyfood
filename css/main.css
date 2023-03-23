@@ -319,11 +319,13 @@ footer i {
 .menu h2 {
   text-transform: uppercase;
   margin-bottom: 0.8rem;
+  position: relative;
 }
 .menu h2::after {
   content: "";
   position: absolute;
   display: block;
+  bottom: -3px;
   width: 45px;
   border-top: 3px solid #99e2d0;
 }
@@ -354,6 +356,9 @@ footer i {
   right: 0px;
   border-radius: 0 18px 18px 0;
   cursor: pointer;
+  transform: translate(61px, 0);
+  transition-timing-function: ease-out;
+  transition: transform 3s;
 }
 
 .dishe-container {
@@ -362,15 +367,20 @@ footer i {
   flex-direction: row;
   height: 70px;
   justify-content: space-between;
-  transition-property: display;
-  transition-duration: 4s;
-}
-.dishe-container .adder {
-  transition: all 3s;
-  display: none;
+  overflow: hidden;
+  transition-timing-function: ease-out;
 }
 .dishe-container:hover .adder {
   display: flex;
+  transform: translate(0px, 0);
+}
+.dishe-container:hover .card__price {
+  transform: translate(0px, 0);
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+}
+.dishe-container:hover .rounded-quote {
+  transform: rotate(360deg);
 }
 
 .rounded-quote {
@@ -400,6 +410,8 @@ footer i {
 .dishes__card .card__price {
   font-weight: bold;
   margin-right: 0.5rem;
+  transform: translate(55px, 0);
+  transition-timing-function: linear;
 }
 
 .card__bottom {

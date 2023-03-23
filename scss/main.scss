@@ -364,13 +364,15 @@ footer {
     text-transform: uppercase;
     // margin-bottom: 0.2rem;
     margin-bottom: 0.8rem;
+    position: relative;
       &::after {
         content: "";
         position: absolute;
         display: block;
-        
+        // transform: translateY(5px);
+        // top: 5px;
 
-        // bottom: 10px;
+        bottom: -3px;
         width: 45px;
         border-top: 3px solid $mint_color;
         // margin-bottom: 0.8rem;
@@ -416,11 +418,12 @@ footer {
   cursor: pointer;
   // position: absolute;
   // top: 10px;
-  // right: -60px;
+  // right: -55px;
   // z-index: -1;
+  transform: translate(61px, 0);
+  transition-timing-function: ease-out; 
+  transition: transform 3s;  // display: none;
 }
-
-
 
 .dishe-container {
   background-color: white;
@@ -430,34 +433,31 @@ footer {
   height: 70px;
   justify-content: space-between;
 
-  // transition: all 3000ms;
+  overflow: hidden;
 
-  transition-property: display;
-  transition-duration: 4s;
-  
-  .adder {
-    transition: all 3s;
-    display: none;
-    
-  }
+  transition-timing-function: ease-out; 
   
   &:hover {
-  .adder {
+    .adder {
     display: flex;
-
-
-    // transform: translate(-100%,0);
-
-
-
+    // position: static;
+    transform: translate(0px, 0);
+     
   }
+    .card__price {
+      transform: translate(0px, 0);
+      transition: transform .5s;
+      transition-timing-function: ease-out; 
+
+
+    }
+    .rounded-quote {
+      transform: rotate(360deg);
+    }
   }
+
 
 }
-
-
-
-
 
 
 .rounded-quote {
@@ -490,6 +490,10 @@ footer {
     .card__price {
       font-weight: bold;
       margin-right: 0.5rem;
+      transform: translate(55px,0);
+      transition-timing-function: linear; 
+
+      
     }
     
     
