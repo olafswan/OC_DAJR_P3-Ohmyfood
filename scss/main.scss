@@ -91,18 +91,13 @@ body {
 
 .loading {
   position: fixed;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // transform: -webkit-translate(-50%, -50%);
-  // transform: -moz-translate(-50%, -50%);
-  // transform: -ms-translate(-50%, -50%);
-  // z-index: 999;
+
   background-color: white;
   width: 100vw;
   height: 100vh;
   animation: loading-spinner 2s forwards ease-out;
 }
+
 
 .spinner {
   position: fixed;
