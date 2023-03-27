@@ -43,11 +43,6 @@ a {
   background-color: grey;
 }
 
-body {
-  background-color: white;
-  margin: 0 auto 0 auto;
-}
-
 @keyframes loading-spinner {
   0% {
     opacity: 1;
