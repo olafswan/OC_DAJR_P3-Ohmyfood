@@ -1,0 +1,17 @@
+.btn-gradient {
+    @include gradient;
+    @include shadow;
+    height: 40px;
+    border-radius: 50px;
+    color: rgb(227, 227, 227);
+    font-weight: 700;
+    box-shadow: 0px 10px 13px -7px #00000084,
+      0px 2px 6px 2px rgba(106, 106, 106, 0);
+    width: fit-content;
+    padding: 0 1rem;
+    &:hover {
+      @include shadow-hover;
+      @include gradient-hover;
+      cursor: pointer;
+    }
+  }

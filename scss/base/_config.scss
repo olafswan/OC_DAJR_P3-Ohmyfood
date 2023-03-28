@@ -19,16 +19,15 @@ h6 {
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-button {
-  border: none;
-  padding: 0;
+  background-color: white;
+  margin: 0 auto 0 auto;
 }
 
 section,
 footer {
   padding: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 
 ul,
@@ -40,3 +39,39 @@ a {
   all: unset;
 }
 
+button {
+  border: none;
+  padding: 0;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.05rem;
+}
