@@ -41,7 +41,7 @@
 }
 
 :root {
-  background-color: grey;
+  // background-color: grey;
 }
 
 
@@ -217,6 +217,7 @@ header {
     top: 18px;
     left: 20px;
     font-size: 20px;
+    cursor: pointer;
     &:hover {
       text-shadow: 0px 10px 13px #0000004b,
       0px 2px 6px rgba(106, 106, 106, 0);
@@ -468,8 +469,9 @@ footer {
     width: 100px;
     margin-bottom: 0.5rem;
   }
-  ul {
+  li {
     margin: 0.5rem 0;
+    cursor: pointer;
   }
 
   i {
@@ -508,6 +510,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   h1 {
     font-family: 'Shrikhand', cursive;
     
@@ -530,19 +533,22 @@ footer {
   animation-delay: 50ms;
   
   @keyframes appearance {
-      0% {
-          opacity: 0;
-          transform: translateY(2rem);
-      }
-      50% {
-        opacity: 0.2;
-        // transform: translateY(1rem);
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
     }
-      100% {
-          opacity: 1;
-          transform: translateY(0);
-      }
+
+    50% {
+      opacity: 0.1;
   }
+    80% {
+      opacity: 0.4;
+  }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 }
 
 .menu {
@@ -603,7 +609,7 @@ footer {
   
   @for $i from 1 to 5 {
     & .dishe-container:nth-child(#{$i}) {
-      animation: appearance 200ms backwards ease-out;
+      animation: appearance 300ms backwards ease-out;
       animation-delay: #{$i * 150}ms;
       }
   }
@@ -613,9 +619,12 @@ footer {
           opacity: 0;
           transform: translateY(2rem);
       }
+
       50% {
-        opacity: 0.2;
-        // transform: translateY(1rem);
+        opacity: 0.1;
+    }
+      80% {
+        opacity: 0.4;
     }
       100% {
           opacity: 1;
@@ -788,7 +797,7 @@ footer {
   }
 
   footer {
-    li {
+    ul {
       display: flex;
       flex-direction: row;
       gap: 2rem;
