@@ -6,7 +6,8 @@
 @import "./base/config";
 // @import "./base/typography";
 // @import "./components/buttons";
-// @import "./layouts/header";
+@import "./layouts/header";
+@import "./layouts/footer";
 // @import "./layouts/nav";
 // @import "./layouts/container";
 // @import "./layouts/form";
@@ -15,6 +16,10 @@
 // @import "./pages/project";
 
 
+
+// ---------------------
+// Start Loading spinner
+// ---------------------
 
 @keyframes loading-spinner {
   0% {
@@ -147,6 +152,9 @@
 }
 
 
+// -------------------
+// End Loading spinner
+// -------------------
 
 
 
@@ -172,30 +180,6 @@
 
 
 
-
-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  
-  .header__logo {
-    width: 175px;
-  }
-  a {
-    position: absolute;
-    top: 18px;
-    left: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    &:hover {
-      text-shadow: 0px 10px 13px #0000004b,
-      0px 2px 6px rgba(106, 106, 106, 0);
-    }
-    
-  }
-}
 
 .location {
   @include location-shadow;
@@ -423,25 +407,6 @@ figcaption {
 
 
 
-footer {
-  color: $faux_white_color;
-  background-color: $footer_color;
-  font-size: 0.85rem;
-  img {
-    filter: brightness(0) invert(1);
-    width: 100px;
-    margin-bottom: 0.5rem;
-  }
-  li {
-    margin: 0.5rem 0;
-    cursor: pointer;
-  }
-
-  i {
-    font-size: 0.8rem;
-    width: 1.25rem;
-  }
-}
 
 // -------------------------------
 // -------------------------------
@@ -700,18 +665,9 @@ footer {
   section,
   footer {
   padding: 2.5rem;
-  // max-width: 600px;
-  // margin: auto;
   }
 
-  footer {
-    ul {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
-    }
-  }
-  
+
 
   .howto__container {
     flex-direction: row;

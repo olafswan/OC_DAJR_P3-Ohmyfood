@@ -1,24 +1,23 @@
 header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    
-    .header__logo {
-      width: 175px;
-    }
-    a {
-      position: absolute;
-      top: 18px;
-      left: 20px;
-      font-size: 20px;
-      &:hover {
-        text-shadow: 0px 10px 13px #0000004b,
-        0px 2px 6px rgba(106, 106, 106, 0);
-      }
-      
-    }
-  }
-
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
   
+  .header__logo {
+    width: 175px;
+  }
+  a {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      text-shadow: 0px 10px 13px #0000004b,
+      0px 2px 6px rgba(106, 106, 106, 0);
+    }
+    
+  }
+}
