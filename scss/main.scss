@@ -1,6 +1,6 @@
 @import "./utils/variables";
 // @import "./utils/functions";
-// @import "./utils/mixins";
+@import "./utils/mixins";
 // @import "./utils/extensions";
 // @import "./base/base";
 @import "./base/config";
@@ -13,35 +13,6 @@
 // @import "./pages/work";
 // @import "./pages/about";
 // @import "./pages/project";
-
-//essai tx
-
-@mixin shadow {
-  box-shadow: 0px 10px 13px -7px #0000004b,
-    0px 2px 6px 2px rgba(106, 106, 106, 0);
-}
-
-@mixin shadow-hover {
-  box-shadow: 0px 10px 13px -7px #000000ab,
-    0px 2px 6px 2px rgba(106, 106, 106, 0);
-}
-
-@mixin gradient-hover {
-  background: linear-gradient(
-    180deg,
-    $sec_color_light 0%,
-    $prim_color_light 100%
-  );
-}
-
-@mixin gradient {
-  background: linear-gradient(180deg, $sec_color 0%, $prim_color 100%);
-}
-
-@mixin location-shadow {
-  box-shadow: inset 0px 2px 6px -2px rgba(106, 106, 106, 0.9);
-}
-
 
 
 
@@ -516,30 +487,7 @@ footer {
   }
 }
 
-@mixin dishes-category-animation {
-  
-  
-  animation: appearance 200ms backwards ease-out;
-  animation-delay: 50ms;
-  
-  @keyframes appearance {
-    0% {
-        opacity: 0;
-        transform: translateY(2rem);
-    }
 
-    50% {
-      opacity: 0.1;
-  }
-    80% {
-      opacity: 0.4;
-  }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-}
 
 .menu {
   background-color: $grey_background;
@@ -595,33 +543,7 @@ footer {
 // 	color: palevioletred;
 // }
 
-@mixin dishes-animation {
-  
-  @for $i from 1 to 5 {
-    & .dishe-container:nth-child(#{$i}) {
-      animation: appearance 300ms backwards ease-out;
-      animation-delay: #{$i * 150}ms;
-      }
-  }
 
-  @keyframes appearance {
-      0% {
-          opacity: 0;
-          transform: translateY(2rem);
-      }
-
-      50% {
-        opacity: 0.1;
-    }
-      80% {
-        opacity: 0.4;
-    }
-      100% {
-          opacity: 1;
-          transform: translateY(0);
-      }
-  }
-}
 
 .dishes {
   display: flex;
