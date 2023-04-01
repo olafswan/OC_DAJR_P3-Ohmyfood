@@ -427,92 +427,6 @@ footer i {
     transition: opacity 500ms;
   }
 }
-@media (min-width: 1000px) {
-  .restaurant-name i:nth-child(3):hover {
-    cursor: pointer;
-    opacity: 100%;
-    transition: opacity 500ms;
-  }
-}
-h4 {
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 100%;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.btn-gradient {
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.2941176471), 0px 2px 6px 2px rgba(106, 106, 106, 0);
-  height: 40px;
-  border-radius: 50px;
-  color: rgb(227, 227, 227);
-  font-weight: 700;
-  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.5176470588), 0px 2px 6px 2px rgba(106, 106, 106, 0);
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0 1rem;
-}
-.btn-gradient:hover {
-  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.6705882353), 0px 2px 6px 2px rgba(106, 106, 106, 0);
-  background: linear-gradient(180deg, rgba(255, 121, 217, 0.8784313725) 0%, rgba(146, 86, 220, 0.9019607843) 100%);
-  cursor: pointer;
-}
-
-section {
-  padding-top: 2.5rem;
-  padding-bottom: 3.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 100%;
-  margin-bottom: 1rem;
-}
-
-.card {
-  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.2941176471), 0px 2px 6px 2px rgba(106, 106, 106, 0);
-  display: flex;
-  padding: 0.65rem;
-  height: 60px;
-  background-color: #f7f7f7;
-  color: rgb(72, 72, 72);
-  position: relative;
-  border-radius: 18px;
-}
-.card:hover {
-  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.6705882353), 0px 2px 6px 2px rgba(106, 106, 106, 0);
-  cursor: pointer;
-}
-
-h5 {
-  font-weight: 700;
-}
-
-.max-container {
-  max-width: 1280px;
-  margin: auto;
-}
-
-h4 {
-  font-size: 1.05rem;
-}
-
-figcaption {
-  display: flex;
-  flex-direction: column;
-}
-
 .menu__cover {
   width: 100%;
   height: 259px;
@@ -769,4 +683,90 @@ figcaption {
   .btn-order {
     margin-top: 3rem;
   }
+  .restaurant-name i:nth-child(3):hover {
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 500ms;
+  }
+}
+.btn-gradient {
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.2941176471), 0px 2px 6px 2px rgba(106, 106, 106, 0);
+  height: 40px;
+  border-radius: 50px;
+  color: rgb(227, 227, 227);
+  font-weight: 700;
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.5176470588), 0px 2px 6px 2px rgba(106, 106, 106, 0);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1rem;
+}
+.btn-gradient:hover {
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.6705882353), 0px 2px 6px 2px rgba(106, 106, 106, 0);
+  background: linear-gradient(180deg, rgba(255, 121, 217, 0.8784313725) 0%, rgba(146, 86, 220, 0.9019607843) 100%);
+  cursor: pointer;
+}
+
+section {
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 1rem;
+}
+
+.card {
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.2941176471), 0px 2px 6px 2px rgba(106, 106, 106, 0);
+  display: flex;
+  padding: 0.65rem;
+  height: 60px;
+  background-color: #f7f7f7;
+  color: rgb(72, 72, 72);
+  position: relative;
+  border-radius: 18px;
+}
+.card:hover {
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.6705882353), 0px 2px 6px 2px rgba(106, 106, 106, 0);
+  cursor: pointer;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.max-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+h4 {
+  font-size: 1.05rem;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+.dishe-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  overflow: hidden;
+  transition-timing-function: ease-out;
+}
+.dishe-container:hover .adder {
+  display: flex;
+  transition: width 500ms;
+  width: 60px;
+}
+.dishe-container:hover .rounded-quote {
+  transform: rotate(1turn);
+  transition: transform 500ms;
 }/*# sourceMappingURL=main.css.map */
