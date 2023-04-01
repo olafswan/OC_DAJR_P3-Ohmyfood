@@ -12,7 +12,7 @@
 // @import "./layouts/container";
 // @import "./layouts/form";
 @import "./pages/home";
-// @import "./pages/about";
+@import "./pages/menu";
 // @import "./pages/project";
 
 
@@ -127,8 +127,6 @@ figcaption {
   object-fit: cover;
 }
 
-
-
 .restaurant-name {
   position: relative;
   bottom: 50px;
@@ -147,13 +145,34 @@ figcaption {
   }
   i {
     font-size: 1.5rem;
-    margin-right: 1rem;
+   
     background-clip: text;
-    // -webkit-background-clip: text;
-    // color: transparent;
-    // border: 1px solid red;
-    // background-color: pink;
+    
+    position: absolute;
+    right: 1.5rem;
   }
+
+// test implementation coeur remplissant MENU PAGE
+
+  
+  i:nth-child(3) {
+    opacity: 0;
+    background: linear-gradient(180deg, $sec_color 0%, $prim_color 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:active {
+      cursor: pointer;
+      opacity: 100%;
+      transition: opacity 500ms;
+    }
+  }
+
+
+// fin de test
+
+  
 }
 
 
@@ -434,3 +453,8 @@ figcaption {
 }
 
 }
+
+
+
+
+

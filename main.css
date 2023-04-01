@@ -427,6 +427,13 @@ footer i {
     transition: opacity 500ms;
   }
 }
+@media (min-width: 1000px) {
+  .restaurant-name i:nth-child(3):hover {
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 500ms;
+  }
+}
 h4 {
   font-weight: 700;
 }
@@ -530,9 +537,22 @@ figcaption {
 }
 .restaurant-name i {
   font-size: 1.5rem;
-  margin-right: 1rem;
   -webkit-background-clip: text;
           background-clip: text;
+  position: absolute;
+  right: 1.5rem;
+}
+.restaurant-name i:nth-child(3) {
+  opacity: 0;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant-name i:nth-child(3):active {
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 500ms;
 }
 
 .menu {
