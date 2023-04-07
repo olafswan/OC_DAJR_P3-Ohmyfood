@@ -738,7 +738,7 @@ footer i {
   margin: auto;
 }
 
-figcaption {
+.caption {
   display: flex;
   flex-direction: column;
 }
