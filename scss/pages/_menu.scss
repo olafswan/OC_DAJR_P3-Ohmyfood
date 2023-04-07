@@ -4,12 +4,27 @@
   object-fit: cover;
 }
 
-.restaurant-name {
+
+.restaurant-caption {
   position: relative;
   bottom: 50px;
   width: 100%;
   background-color: $grey_background;
   border-radius: 38px 38px 0 0;
+  height: 80px;
+  // padding: 2rem 1rem 3.5rem;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+}
+
+
+.restaurant-name {
+  position: relative;
+  // bottom: 50px;
+  width: 100%;
+  // background-color: $grey_background;
+  // border-radius: 38px 38px 0 0;
   height: 80px;
   padding: 2rem 1rem 3.5rem;
   display: flex;
@@ -182,6 +197,7 @@
 .order {
   max-width: 1280px;
   display: flex;
+  margin: auto;
 }
 
 .btn-order {
@@ -236,13 +252,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1280px;
-    // margin: 0 auto;
-    // TODO fix the bug when centering using margin auto
-  
-    
+    max-width: 1000px;
+    margin: 0 auto;
+
     section {
-      width: 50%;
+      // width: 50%;
+      width: 499px;
     }
   }
   
@@ -259,7 +274,12 @@
   }
 
 
+ 
+  
   .restaurant-name {
+    max-width: 1080px;
+    margin: auto;
+    // border: 1px solid red;
     i:nth-child(3) {
       &:hover {
         cursor: pointer;
