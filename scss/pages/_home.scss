@@ -72,7 +72,7 @@
   
   @keyframes ball {
     0% {
-      transform: translate(0, 0);
+      // transform: translate(0, 0);
     }
     50% {
       transform: translate(85px, 0);
@@ -84,7 +84,7 @@
   @keyframes ball2 {
     0% {
       opacity: 1;
-      transform: translate(0 0);
+      // transform: translate(0 0);
     }
     49.99% {
       opacity: 1;
