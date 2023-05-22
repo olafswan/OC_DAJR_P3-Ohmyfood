@@ -60,3 +60,9 @@ Vous avez désormais tous les éléments pour construire le site. Vous vous lanc
 [Gérez du code avec Git et GitHub](https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github)
 
 [Apprenez à utiliser la ligne de commande dans un terminal](https://openclassrooms.com/fr/courses/6173491-apprenez-a-utiliser-la-ligne-de-commande-dans-un-terminal)
+
+### Résultat final lors du passage de la soutenance :
+[Page d'acceuil OhMyFood](https://olafswan.github.io/OC_DAJR_P3/index.html)
+
+[Page restaurant OhMyFood](https://olafswan.github.io/OC_DAJR_P3/la-palette-du-gout.html)
+
