@@ -106,11 +106,11 @@ Vous avez désormais tous les éléments pour construire le site. Vous vous lanc
 ### Ressources :
 [Comment héberger un site web facilement avec GitHub](https://www.youtube.com/watch?v=dBAZ5Qc2bIk)
 
-[Grafikart : comprendre Git](https://www.youtube.com/watch?v=dBAZ5Qc2bIk)
+[Grafikart : comprendre Git](https://www.grafikart.fr/formations/git)
 
-[Grafikart : Mise en pratique des notions SASS de base](https://www.youtube.com/watch?v=dBAZ5Qc2bIk)
+[Grafikart : Mise en pratique des notions SASS de base](https://www.grafikart.fr/formations/sass-preprocesseur)
 
-[Devenez un expert de Git et GitHub](https://www.youtube.com/watch?v=dBAZ5Qc2bIk)
+[Devenez un expert de Git et GitHub](https://openclassrooms.com/fr/courses/7688581-devenez-un-expert-de-git-et-github)
 
 
 ### Résultat final lors du passage de la soutenance :
